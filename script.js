@@ -30,3 +30,9 @@ function reverseNumber(num) {
 console.log(reverseNumber(1234))
 console.log(reverseString("eninracconsultingpvtltd"))
 console.log(pow(5, 4));
+
+
+let str = "error found in the application"
+if (str) {
+    console.log("Error found: " + str)
+}
