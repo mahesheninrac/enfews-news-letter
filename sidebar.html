@@ -219,10 +219,107 @@
       .pricing-item .pricing-details ul li span {
         padding-right: 10px;
       }
+
+      .project-item.style-two .project-image {
+        margin-bottom: 18px;
+        z-index: 1;
+        position: relative;
+      }
+      .project-image {
+        margin-bottom: 45px;
+      }
+      .project-image img {
+        width: 100%;
+      }
+      img {
+        max-width: 100%;
+        display: inline-block;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .section-title {
+          margin-bottom: 30px;
+        }
+      }
+
+      .project-item.style-two {
+        border: 1px solid rgba(119, 119, 125, 0.2);
+        border-radius: 16px;
+      }
+
+      @media only screen and (max-width: 1199px) {
+        .project-item.style-two .project-content {
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+      }
+      .project-item.style-two .project-content {
+        margin-bottom: 0;
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+      @media only screen and (max-width: 767px) {
+        .project-content {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+
+      .project-item.style-two .project-content h3 {
+        color: rgb(29, 29, 38);
+        font-size: 20px;
+        display: block;
+      }
+
+      .project-content .subtitle {
+        margin-bottom: 0;
+        color: #77777d;
+      }
+
+      .project-item.style-two:hover .project-image::before {
+        opacity: 0.45;
+      }
+      .project-item.style-two .project-image::before {
+        z-index: 1;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+      .project-item.style-two .project-image::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: #000;
+      }
+
+      .project-item.style-two:hover .project-image .details-btn {
+        opacity: 1;
+      }
+
+      .details-btn {
+        opacity: 0;
+        transition: 0.3s;
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: #fff;
+        width: 65px;
+        height: 65px;
+        background: #000;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 65px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
-   
     <section id="resume" class="resume-area">
       <div class="container">
         <div class="row">
@@ -295,6 +392,42 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl 12 col-lg-12">
+            <div class="">
+              <div class="section-title text-center wow fadeInUp delay-0-2s">
+                <p>Works</p>
+                <h2>Recent Projects</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row project-masonry-active">
+          <div class="col-lg-4 col-md-6 item branding">
+            <div class="project-item style-two wow fadeInUp delay-0-2s">
+              <div class="project-image">
+                <img
+                  src="https://kane-portfolio-react.vercel.app/assets/work1-eC3ZTYBG.jpeg"
+                  alt=""
+                />
+                <div class="details-btn">
+                  <a href="#" class="text-decoration-none text-white"
+                    >&#8599;</a
+                  >
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="subtitle">design</span>
+                <h4>Web Application Design</h4>
               </div>
             </div>
           </div>
@@ -384,7 +517,7 @@
       </div>
     </section>
 
-    <section id="contact" class="contact-area contact-form-area">
+    <section id="contact" class="contact-area">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -425,7 +558,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col-lg-8">
               <div class="contact-form contact-form-area">
                 <form action="" id="contactForm">
@@ -472,13 +604,13 @@
     </section>
 
     <footer class="main-footer">
-      <div class="footer-bottom">
+      <div class="footer-bottm">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
               <div class="copyright">
                 <p>
-                  Copyright @2023, <a href="#">Mahesh</a> All Rights Reserved.
+                  &#169; Copyright @2024, <a href="#">Mahesh</a> All Rights Reserved.
                 </p>
               </div>
             </div>
