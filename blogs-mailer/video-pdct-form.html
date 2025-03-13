@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Document</title>
+
+    <style>
+        p {
+            font-size: 16px;
+
+        }
+
+        .fs-20 {
+            font-size: 20px;
+        }
+
+        label {
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="header mb-3">
+                <div class="logo"></div>
+                <div class="header-banner"></div>
+            </div>
+            <div class="form-wrapper rounded border border-dark px-5 py-4">
+                <form id="myForm">
+                    <div class="form-group mb-2">
+                        <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                        <input type="text" id="firstName" class="form-control" required>
+                        <div class="invalid-feedback">Please complete this required field.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                        <input type="text" id="lastName" class="form-control" required>
+                        <div class="invalid-feedback">Please complete this required field.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="phoneNumber" class="form-label">Phone number <span
+                                class="text-danger">*</span></label>
+                        <input type="text" id="phoneNumber" class="form-control" required>
+                        <div class="invalid-feedback">Please complete this required field.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="country" class="form-label">Country <span class="text-danger">*</span></label>
+                        <select name="" id="country" class="form-select" required>
+                            <option value="India">India</option>
+                        </select>
+                        <div class="invalid-feedback">Please complete this required field.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                        <input type="text" id="email" class="form-control" required>
+                        <div class="invalid-feedback">Please complete this required field.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="companyName" class="form-label">Company name <span
+                                class="text-danger">*</span></label>
+                        <input type="text" id="companyName" class="form-control" required>
+                        <div class="invalid-feedback">Please complete this required field.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="companyCategory" class="form-label">Company Category <span
+                                class="text-danger">*</span></label>
+                        <select name="" id="companyCategory" class="form-select" required>
+                            <option value="IT">IT</option>
+                        </select>
+                        <div class="invalid-feedback">Please complete this required field.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="jobTitle" class="form-label">Job title <span class="text-danger">*</span></label>
+                        <input type="text" id="jobTitle" class="form-control" required>
+                        <div class="invalid-feedback">Please complete this required field.</div>
+                    </div>
+
+                    <div class="video-options-wrapper">
+                        <h3 class="fs-20 my-3">Please select the recordings you would like to receive:</h3>
+
+                        <div class="video-list-wrapper">
+                            <ul class="list-unstyled ps-0">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label text-bold" for="flexCheckDefault">
+                                            Mine to Grid: LFP - Issued 27th January
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="newsletters-subscription-wrapper">
+                            <div class="hs-richtext">
+                                <p>If you'd like to hear more from us, select the emails you'd like to receive below:
+                                </p>
+                            </div>
+
+                            <ul class="list-unstyled ps-0">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="subscription-wrapper">
+                                        <label class="form-check-label text-bold" for="subscription-wrapper">
+                                            Eninrac Newsletter (Weekly)
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="hs-richtext">
+                            <p><br>You may unsubscribe from these communications at any time. For more information on
+                                how to unsubscribe, our privacy practices, and how we are committed to protecting and
+                                respecting your privacy, please review our
+                                <a href="https://source.benchmarkminerals.com/privacy" target="_blank"
+                                    rel="noopener">Privacy Policy</a>.<br><br>
+                            </p>
+                        </div>
+
+                        <div class="hs-richtext">
+                            <p>By clicking submit below, you consent to allow Benchmark Mineral Intelligence to store
+                                and process the personal information submitted above to provide you the content
+                                requested.</p>
+                        </div>
+                    </div>
+
+                    <div class="submit-button-wrapper">
+                        <button class="btn btn-primary w-100">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('input, select').forEach(function (element) {
+            element.addEventListener('focus', function () {
+                if (element.classList.contains('is-invalid')) {
+                    element.classList.remove('is-invalid');
+                    element.nextElementSibling.style.display = 'none';
+                }
+            });
+
+            element.addEventListener('blur', function () {
+                if (!element.value) {
+                    element.classList.add('is-invalid');
+                    element.nextElementSibling.style.display = 'block';
+                }
+            });
+        });
+
+        // Handle form submit and check for errors
+        document.getElementById('myForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            let invalidFields = false;
+
+            document.querySelectorAll('input[required], select[required]').forEach(function (field) {
+                if (!field.value) {
+                    field.classList.add('is-invalid');
+                    field.nextElementSibling.style.display = 'block';
+                    invalidFields = true;
+                } else {
+                    field.classList.remove('is-invalid');
+                    field.nextElementSibling.style.display = 'none';
+                }
+            });
+
+            if (!invalidFields) {
+                // Proceed with form submission
+                alert('Form submitted successfully!');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
