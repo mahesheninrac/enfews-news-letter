@@ -56,3 +56,6 @@ console.log(stack.pop() + " pop");
 console.log(stack.pop());
 console.log(stack.peek());
 stack.print();
+
+
+// 
