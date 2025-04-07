@@ -15,7 +15,6 @@ class DoublyLinkedList {
 
     prepend(value) {
         const newNode = new Node(value);
-
         if (!this.head) {
             this.head = this.tail = newNode;
         } else {
@@ -29,7 +28,6 @@ class DoublyLinkedList {
 
     append(value) {
         const newNode = new Node(value);
-
         if (!this.head) {
             this.head = this.tail = newNode;
         } else {
