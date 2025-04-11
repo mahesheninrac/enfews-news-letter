@@ -150,8 +150,6 @@
             ${Object.entries(data.earnings).map(([key, value]) => key !== 'totalEarnings' ? `<tr><td>${formatLabel(key)}</td><td style="text-align:right;">₹${value.toFixed(2)}</td></tr>` : '').join('')}
             <tr><th>Total Earnings</th><th style="text-align:right;">₹${totalEarnings.toFixed(2)}</th></tr>
           </table>
-          
-          
         </div>
         <div style="width: 48%;">
           <h3>Deductions</h3>
