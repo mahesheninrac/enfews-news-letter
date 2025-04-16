@@ -12,7 +12,7 @@ function merge(left, right) {
         if (left[0] < right[0]) {
             sortedArr.push(left.shift())
         }
-        else {
+        else { 
             sortedArr.push(right.shift())
         }
     }
