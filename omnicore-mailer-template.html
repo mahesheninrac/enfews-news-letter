@@ -1,762 +1,1822 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <style>
-        * {
-            margin: 0 0 0 0;
-            padding: 0 0 0 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        box-sizing: border-box;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div style="font-family: sans-serif;margin: 0;padding: 0;background-color: #f4f4f4;">
-        <table role=" presentation" cellpadding="0" cellspacing="0" border="0"
-            style="margin: 0 auto;padding: 0 0 0 0;width: 100%;max-width: 650px;background-color: #ffffff;font-family: Arial, Helvetica, sans-serif;border: 1px solid #e5e8ec;">
-            <!-- Top Header -->
-            <tr>
-                <td style="text-align: center;background-color: #062045;color: #ffffff;padding: 20px 0;">
-                    <a href="https://omnicoreplus.com/omninews-daily?q=[private-key]"
-                        style="text-wrap: nowrap;color: #ffffff;margin: 0 5px;text-decoration: none;font-size: 14px;">View
-                        as a webpage</a>
-                    <span style="margin: 0 5px">|</span>
-                    <a href="https://omnicoreplus.com/safe-sender-list?q=[private-key]"
-                        style="text-wrap: nowrap;color: #ffffff;margin: 0 5px;text-decoration: none;font-size: 14px;">Add
-                        us to your safe senders list</a>
-                    <span style="margin: 0 5px">|</span>
-                    <a href="https://omnicoreplus.com/marketing-preferences?q=[private-key]"
-                        style="text-wrap: nowrap;color: #ffffff;margin: 0 5px;text-decoration: none;font-size: 14px;">Marketing
-                        preferences</a>
+  <body>
+    <div
+      style="
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      "
+    >
+      <table
+        role=" presentation"
+        cellpadding="0"
+        cellspacing="0"
+        border="0"
+        style="
+          margin: 0 auto;
+          padding: 0 0 0 0;
+          width: 100%;
+          max-width: 650px;
+          background-color: #ffffff;
+          font-family: Arial, Helvetica, sans-serif;
+          border: 1px solid #e5e8ec;
+        "
+      >
+        <!-- Top Header -->
+        <tr>
+          <td
+            style="
+              text-align: center;
+              background-color: #062045;
+              color: #ffffff;
+              padding: 20px 0;
+            "
+          >
+            <a
+              href="https://omnicoreplus.com/omninews-daily?q=[private-key]"
+              style="
+                text-wrap: nowrap;
+                color: #ffffff;
+                margin: 0 5px;
+                text-decoration: none;
+                font-size: 14px;
+              "
+              >View as a webpage</a
+            >
+            <span style="margin: 0 5px">|</span>
+            <a
+              href="https://omnicoreplus.com/safe-sender-list?q=[private-key]"
+              style="
+                text-wrap: nowrap;
+                color: #ffffff;
+                margin: 0 5px;
+                text-decoration: none;
+                font-size: 14px;
+              "
+              >Add us to your safe senders list</a
+            >
+            <span style="margin: 0 5px">|</span>
+            <a
+              href="https://omnicoreplus.com/marketing-preferences?q=[private-key]"
+              style="
+                text-wrap: nowrap;
+                color: #ffffff;
+                margin: 0 5px;
+                text-decoration: none;
+                font-size: 14px;
+              "
+              >Marketing preferences</a
+            >
+          </td>
+        </tr>
+        <!-- Main Header -->
+        <tr>
+          <td style="padding: 15px">
+            <table width="100%" style="border-collapse: collapse">
+              <tr>
+                <td style="width: 100px">
+                  <a href="https://omnicoreplus.com/" target="_blank">
+                    <img
+                      src="https://eninrac.com/assets/upload/omnicore-logo.png"
+                      alt="Logo"
+                      style="max-width: 100px"
+                    />
+                  </a>
                 </td>
-            </tr>
-            <!-- Main Header -->
-            <tr>
-                <td style="padding: 15px">
-                    <table width="100%" style="border-collapse: collapse">
-                        <tr>
-                            <td style="width: 100px">
-                                <a href="https://omnicoreplus.com/" target="_blank">
-                                    <img src="https://eninrac.com/assets/upload/omnicore-logo.png" alt="Logo"
-                                        style="max-width: 100px" />
-                                </a>
-                            </td>
-                            <td style="text-align: right">
-                                <h4
-                                    style="font-size: 20px;color: #003366;margin: 10px 0;position: relative;padding-bottom: 5px;">
-                                    Regulatory, Policy Updates
-                                    <span
-                                        style="display: block;height: 5px;width: 100px;background: rgb(0, 27, 255);background: linear-gradient(320deg,rgba(0, 27, 255, 1) 0%,rgba(6, 66, 159, 1) 42%,rgba(9, 9, 121, 1) 100%,rgba(2, 0, 36, 1) 100%);border-radius: 8px;margin-top: 10px;margin-left: auto;"></span>
-                                </h4>
-                            </td>
-                        </tr>
+                <td style="text-align: right">
+                  <h4
+                    style="
+                      font-size: 20px;
+                      color: #003366;
+                      margin: 10px 0;
+                      position: relative;
+                      padding-bottom: 5px;
+                    "
+                  >
+                    Regulatory, Policy Updates
+                    <span
+                      style="
+                        display: block;
+                        height: 5px;
+                        width: 100px;
+                        background: rgb(0, 27, 255);
+                        background: linear-gradient(
+                          320deg,
+                          rgba(0, 27, 255, 1) 0%,
+                          rgba(6, 66, 159, 1) 42%,
+                          rgba(9, 9, 121, 1) 100%,
+                          rgba(2, 0, 36, 1) 100%
+                        );
+                        border-radius: 8px;
+                        margin-top: 10px;
+                        margin-left: auto;
+                      "
+                    ></span>
+                  </h4>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Top Articles -->
+        <tr>
+          <td style="padding: 20px 20px 0px 20px">
+            <table
+              width="100%"
+              cellpadding="0"
+              cellspacing="0"
+              style="
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              <tr>
+                <td
+                  style="width: 65%; vertical-align: top; padding-right: 20px"
+                >
+                  <table
+                    width="100%"
+                    cellpadding="0"
+                    cellspacing="0"
+                    style="border-collapse: collapse; margin-bottom: 20px"
+                  >
+                    <tr>
+                      <td
+                        style="
+                          font-size: 18px;
+                          color: #003366;
+                          border-bottom: 2px solid #003366;
+                          padding-bottom: 5px;
+                          margin-bottom: 10px;
+                          font-weight: bold;
+                        "
+                      >
+                        Top Articles
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul
+                          style="
+                            list-style: none;
+                            padding: 0;
+                            margin: 10px 0 0 0;
+                          "
+                        >
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/cerc-petition-for-adoption-of-transmission-charges-to-transmission-system-of-bikaner-b-power-transmission-limited"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >CERC: Petition for adoption of transmission
+                              charges to Transmission System of Bikaner B Power
+                              Transmission Limited</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/cerc-petition-for-determination-of-the-transmission-tariff-for-the-2024-29-nrsss-i-in-nr-pgcil"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >CERC: Petition for determination of the
+                              transmission tariff for the 2024-29; NRSSS-I in
+                              NR, PGCIL</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/cerc-petition-for-determination-of-the-transmission-tariff-for-the-2024-29-patratu-hatia-chandil-at-ranchi-substation"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >CERC: Petition for determination of the
+                              transmission tariff for the 2024-29;
+                              Patratu-Hatia-Chandil at Ranchi Substation</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/cerc-petition-for-determination-of-the-transmission-tariff-for-the-2024-29-talcher-meramundali-transmission-line-pgcil"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >CERC: Petition for determination of the
+                              transmission tariff for the 2024-29;
+                              Talcher-Meramundali Transmission Line PGCIL</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/cerc-petition-for-determination-of-transmission-tariff-for-the-2024-29-kolaghat-rengali-scc-line-at-baripada-in-er"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >CERC: Petition for determination of transmission
+                              tariff for the 2024-29; Kolaghat-Rengali S/C line
+                              at Baripada in ER</a
+                            >
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td style="width: 35%; vertical-align: top">
+                  <table
+                    width="100%"
+                    cellpadding="0"
+                    cellspacing="0"
+                    style="
+                      border-collapse: collapse;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                  >
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            font-size: 18px;
+                            color: #003366;
+                            border-bottom: 2px solid #003366;
+                            font-weight: bold;
+                            padding-bottom: 5px;
+                          "
+                        >
+                          Insight
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div
+                            style="
+                              margin-top: 10px;
+                              padding: 20px;
+                              margin-bottom: 20px;
+                              border-radius: 8px;
+                              background-color: #eee9ff;
+                            "
+                          >
+                            <p style="font-size: 14px; color: #003366">
+                              CERC: Draft CERC (Connectivity and General Network
+                              Access to the ISTS) (Fourth Amendment)
+                              Regulations, 2025.
+                              <span>
+                                <a
+                                  href="https://omnicoreplus.com/post/cerc-draft-cerc-connectivity-and-general-network-access-to-the-ists-fourth-amendment-regulations-2025"
+                                  target="_blank"
+                                  style="
+                                    font-size: 14px;
+                                    text-decoration: none;
+                                    color: blue;
+                                    margin-top: 10px;
+                                  "
+                                  >Learn More</a
+                                >
+                              </span>
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          style="
+                            font-size: 18px;
+                            color: #003366;
+                            border-bottom: 2px solid #003366;
+                            font-weight: bold;
+                            padding-bottom: 5px;
+                          "
+                        >
+                          Bid Updates
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div
+                            style="
+                              margin-top: 10px;
+                              padding: 20px;
+                              margin-bottom: 20px;
+                              border-radius: 8px;
+                              background-color: #eee9ff;
+                            "
+                          >
+                            <p style="font-size: 14px; color: #003366">
+                              Selection of Solar Power Developers for setting up
+                              of Grid Connected Floating Solar PV Projects with
+                              BESS in Lakshadweep
+                              <span>
+                                <a
+                                  href="https://omnicoreplus.com/post/selection-of-solar-power-developers-for-setting-up-of-grid-connected-floating-solar-pv-projects-with-bess-in-lakshadweep"
+                                  target="_blank"
+                                  style="
+                                    font-size: 14px;
+                                    text-decoration: none;
+                                    color: blue;
+                                    margin-top: 10px;
+                                  "
+                                  >Learn More</a
+                                >
+                              </span>
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Open Access -->
+        <tr>
+          <td style="padding: 20px 20px 0px 20px">
+            <table
+              width="100%"
+              cellpadding="0"
+              cellspacing="0"
+              style="
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td
+                    style="width: 65%; vertical-align: top; padding-right: 20px"
+                  >
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="border-collapse: collapse; margin-bottom: 20px"
+                    >
+                      <tr>
+                        <td
+                          style="
+                            font-size: 18px;
+                            color: #003366;
+                            border-bottom: 2px solid #003366;
+                            padding-bottom: 5px;
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                          "
+                        >
+                          Open Access / Solar Rooftop
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul
+                            style="
+                              list-style: none;
+                              padding: 0;
+                              margin: 10px 0 0 0;
+                            "
+                          >
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/kerc-issue-of-draft-wheeling-and-banking-agreement-format-for-open-access-projects-under-draft-kerc-tc-for-open-access"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >KERC: Issue of Draft Wheeling and Banking
+                                Agreement Format for Open Access Projects under
+                                Draft KERC T&C for open access</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/rerc-grid-interactive-distributed-renewable-energy-generating-systems-regulations-2021-and-amendments"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >RERC: Grid Interactive Distributed Renewable
+                                Energy Generating Systems Regulations, 2021, and
+                                amendments</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/rajasthan-electricity-regulatory-commission-terms-and-conditions-for-determination-of-tariff-regulations-2025"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >Rajasthan Electricity Regulatory Commission
+                                (Terms and Conditions for Determination of
+                                Tariff) Regulations, 2025</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/aptel-order-meptcl-vs-mserc-appeal-no-361-of-2017-transmission-tariff-and-open-access-charges-for-fy-2016-17"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >Aptel Order for MePTCL vs MSERC; APPEAL No. 361
+                                OF 2017; Transmission Tariff and Open Access
+                                Charges for FY 2016-17</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/wberc-seeking-direction-for-grant-of-open-access-by-pcbl-for-conveyance-transmission-of-power-from-ab-zone-substation"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >WBERC: Seeking direction for grant of open
+                                access by PCBL for conveyance & transmission of
+                                power from AB zone substation</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/oreda-tender-for-epc-contractors-to-participate-under-pm-kusum-a"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >OREDA: Tender for EPC contractors to
+                                participate under PM KUSUM-A</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/cerc-rops-petition-for-open-access-for-the-purpose-of-supply-of-contracted-capacity-of-100-mw-from-noida-power-company"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >CERC RoPs: Petition for open access for the
+                                purpose of supply of contracted capacity of 100
+                                MW from Noida Power Company</a
+                              >
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
                     </table>
-                </td>
-            </tr>
-            <!-- Top Articles -->
-            <tr>
-                <td style="padding: 20px 20px 0px 20px">
-                    <table width="100%" cellpadding="0" cellspacing="0"
-                        style="border-collapse: collapse;font-family: Arial, Helvetica, sans-serif;">
+                  </td>
+                  <td style="width: 35%; vertical-align: top">
+                    <table
+                      style="
+                        border-collapse: collapse;
+                        margin: 0px;
+                        font-family: Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      <tbody>
                         <tr>
-                            <td style="width: 65%; vertical-align: top; padding-right: 20px">
-                                <table width="100%" cellpadding="0" cellspacing="0"
-                                    style="border-collapse: collapse; margin-bottom: 20px">
-                                    <tr>
-                                        <td
-                                            style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;padding-bottom: 5px;margin-bottom: 10px;font-weight: bold;">
-                                            Top Articles</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <ul style="list-style: none; padding: 0; margin: 10px 0 0 0">
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/cerc-petition-for-adoption-of-transmission-charges-to-transmission-system-of-bikaner-b-power-transmission-limited'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                        Petition for adoption of transmission charges to Transmission
-                                                        System of Bikaner B Power Transmission Limited</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/cerc-petition-for-determination-of-the-transmission-tariff-for-the-2024-29-nrsss-i-in-nr-pgcil'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                        Petition for determination of the transmission tariff for the
-                                                        2024-29; NRSSS-I in NR, PGCIL</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/cerc-petition-for-determination-of-the-transmission-tariff-for-the-2024-29-patratu-hatia-chandil-at-ranchi-substation'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                        Petition for determination of the transmission tariff for the
-                                                        2024-29; Patratu-Hatia-Chandil at Ranchi Substation</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/cerc-petition-for-determination-of-the-transmission-tariff-for-the-2024-29-talcher-meramundali-transmission-line-pgcil'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                        Petition for determination of the transmission tariff for the
-                                                        2024-29; Talcher-Meramundali Transmission Line PGCIL</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/cerc-petition-for-determination-of-transmission-tariff-for-the-2024-29-kolaghat-rengali-scc-line-at-baripada-in-er'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                        Petition for determination of transmission tariff for the
-                                                        2024-29; Kolaghat-Rengali S/C line at Baripada in ER</a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td style="width: 35%; vertical-align: top">
-                                <table width="100%" cellpadding="0" cellspacing="0"
-                                    style="border-collapse: collapse;font-family: Arial, Helvetica, sans-serif;">
-                                    <tbody>
-                                        <tr>
-                                            <td
-                                                style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;font-weight: bold;padding-bottom: 5px;">
-                                                Insight</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div
-                                                    style='margin-top:10px;padding: 20px;margin-bottom: 20px;border-radius: 8px;background-color: #eee9ff;'>
-                                                    <p style='font-size: 14px; color: #003366'>CERC: Draft CERC
-                                                        (Connectivity and General Network Access to the ISTS) (Fourth
-                                                        Amendment) Regulations, 2025.
-                                                        <span>
-                                                            <a href='https://omnicoreplus.com/post/cerc-draft-cerc-connectivity-and-general-network-access-to-the-ists-fourth-amendment-regulations-2025'
-                                                                target='_blank'
-                                                                style='font-size: 14px;text-decoration: none;color: blue;margin-top: 10px;'>Learn
-                                                                More</a>
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td
-                                                style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;font-weight: bold;padding-bottom: 5px;">
-                                                Bid Updates</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div
-                                                    style='margin-top:10px;padding: 20px;margin-bottom: 20px;border-radius: 8px;background-color: #eee9ff;'>
-                                                    <p style='font-size: 14px; color: #003366'>Selection of Solar Power
-                                                        Developers for setting up of Grid Connected Floating Solar PV
-                                                        Projects with BESS in Lakshadweep
-                                                        <span>
-                                                            <a href='https://omnicoreplus.com/post/selection-of-solar-power-developers-for-setting-up-of-grid-connected-floating-solar-pv-projects-with-bess-in-lakshadweep'
-                                                                target='_blank'
-                                                                style='font-size: 14px;text-decoration: none;color: blue;margin-top: 10px;'>Learn
-                                                                More</a>
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
+                          <td
+                            style="
+                              font-size: 18px;
+                              color: #003366;
+                              border-bottom: 2px solid #003366;
+                              font-weight: bold;
+                              padding-bottom: 5px;
+                            "
+                          >
+                            Open Access services
+                          </td>
                         </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- Open Access -->
-            <tr>
-                <td style="padding: 20px 20px 0px 20px">
-                    <table width="100%" cellpadding="0" cellspacing="0"
-                        style="border-collapse: collapse;font-family: Arial, Helvetica, sans-serif;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 65%; vertical-align: top; padding-right: 20px">
-                                    <table width="100%" cellpadding="0" cellspacing="0"
-                                        style="border-collapse: collapse; margin-bottom: 20px">
-                                        <tr>
-                                            <td
-                                                style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;padding-bottom: 5px;margin-bottom: 10px;font-weight: bold;">
-                                                Open Access / Solar Rooftop</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <ul style="list-style: none;padding: 0;margin: 10px 0 0 0;">
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/kerc-issue-of-draft-wheeling-and-banking-agreement-format-for-open-access-projects-under-draft-kerc-tc-for-open-access'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>KERC:
-                                                            Issue of Draft Wheeling and Banking Agreement Format for
-                                                            Open Access Projects under Draft KERC T&C for open
-                                                            access</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/rerc-grid-interactive-distributed-renewable-energy-generating-systems-regulations-2021-and-amendments'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>RERC:
-                                                            Grid Interactive Distributed Renewable Energy Generating
-                                                            Systems Regulations, 2021, and amendments</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/rajasthan-electricity-regulatory-commission-terms-and-conditions-for-determination-of-tariff-regulations-2025'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>Rajasthan
-                                                            Electricity Regulatory Commission (Terms and Conditions for
-                                                            Determination of Tariff) Regulations, 2025</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/aptel-order-meptcl-vs-mserc-appeal-no-361-of-2017-transmission-tariff-and-open-access-charges-for-fy-2016-17'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>Aptel
-                                                            Order for MePTCL vs MSERC; APPEAL No. 361 OF 2017;
-                                                            Transmission Tariff and Open Access Charges for FY
-                                                            2016-17</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/wberc-seeking-direction-for-grant-of-open-access-by-pcbl-for-conveyance-transmission-of-power-from-ab-zone-substation'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>WBERC:
-                                                            Seeking direction for grant of open access by PCBL for
-                                                            conveyance & transmission of power from AB zone
-                                                            substation</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/oreda-tender-for-epc-contractors-to-participate-under-pm-kusum-a'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>OREDA:
-                                                            Tender for EPC contractors to participate under PM
-                                                            KUSUM-A</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/cerc-rops-petition-for-open-access-for-the-purpose-of-supply-of-contracted-capacity-of-100-mw-from-noida-power-company'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC
-                                                            RoPs: Petition for open access for the purpose of supply of
-                                                            contracted capacity of 100 MW from Noida Power Company</a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
+                        <tr>
+                          <td>
+                            <div style="width: 100%; margin-top: 10px">
+                              <img
+                                src="https://omnicoreplus.com/assets/om-upload/einfews-advertisment-banner-001.png"
+                                alt=""
+                                style="
+                                  height: 160px;
+                                  width: 100%;
+                                  border-radius: 8px;
+                                  display: block;
+                                "
+                              />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              style="
+                                font-family: Arial, Helvetica, sans-serif;
+                                border-collapse: collapse;
+                                margin-bottom: 10px;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding-top: 20px;
+                                    font-size: 18px;
+                                    color: #003366;
+                                    border-bottom: 2px solid #003366;
+                                    font-weight: bold;
+                                    padding-bottom: 5px;
+                                  "
+                                >
+                                  Contact
                                 </td>
-                                <td style="width: 35%; vertical-align: top">
-                                    <table
-                                        style="border-collapse: collapse;margin: 0px;font-family: Arial, Helvetica, sans-serif;">
-                                        <tbody>
-                                            <tr>
-                                                <td
-                                                    style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;font-weight: bold;padding-bottom: 5px;">
-                                                    Open Access services</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div style="width: 100%; margin-top: 10px">
-                                                        <img src="https://omnicoreplus.com/assets/om-upload/einfews-advertisment-banner-001.png"
-                                                            alt=""
-                                                            style="height:160px;width: 100%;border-radius: 8px;display: block;" />
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <table width="100%" cellpadding="0" cellspacing="0"
-                                                        style="font-family: Arial, Helvetica, sans-serif;border-collapse: collapse;margin-bottom: 10px;">
-                                                        <tr>
-                                                            <td
-                                                                style="padding-top: 20px;font-size: 18px;color: #003366;border-bottom: 2px solid #003366;font-weight: bold;padding-bottom: 5px;">
-                                                                Contact</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td
-                                                                style="font-size: 14px;color: #333333;padding-top: 10px;">
-                                                                <div
-                                                                    style="margin-bottom: 20px;background-color: white;border-radius: 8px;">
-                                                                    <p
-                                                                        style="font-size: 14px;color: #333333;text-align: left;">
-                                                                        To book Open Access suite services & gain first
-                                                                        mover advantage please contact BD Team</p>
-                                                                    <div style="margin-top: 20px">
-                                                                        <div
-                                                                            style="border-radius: 50%;width: 70px;height: 70px;overflow: hidden;">
-                                                                            <img src="https://eninrac.com/assets/upload/nitika-sharma.jpg"
-                                                                                width="70" height="70"
-                                                                                style="border-radius: 50%;object-fit: cover;"
-                                                                                alt="" />
-                                                                        </div>
-                                                                        <p style="font-size: 14px;margin-top: 10px;">
-                                                                            Nitika Sharma
-                                                                            <br />
-                                                                            <span>
-                                                                                <a href="mailto:nsharma@eninrac.com"
-                                                                                    style="color: rgb(64, 114, 210);text-decoration: none;">nsharma@eninrac.com</a>
-                                                                            </span>
-                                                                            <br>
-                                                                            <span>
-                                                                                <a href="tel:9319048963"
-                                                                                    style="color: rgb(64, 114, 210);text-decoration: none;">+91
-                                                                                    9319048963</a>
-                                                                            </span>
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <!-- New Energies / Generation  -->
-            <tr>
-                <td style="padding: 20px 20px 0px 20px">
-                    <table width="100%" cellpadding="0" cellspacing="0"
-                        style="border-collapse: collapse;font-family: Arial, Helvetica, sans-serif;">
-                        <tbody>
-                            <tr>
-                                <td style="width: 65%; vertical-align: top; padding-right: 20px">
-                                    <table width="100%" cellpadding="0" cellspacing="0"
-                                        style="border-collapse: collapse; margin-bottom: 20px">
-                                        <tr>
-                                            <td
-                                                style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;padding-bottom: 5px;margin-bottom: 10px;font-weight: bold;">
-                                                New Energies / Generation / T&D</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <ul style="list-style: none;padding: 0;margin: 10px 0 0 0;">
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/cerc-petition-for-determination-of-transmission-tariff-for-the-2024-29-jeypore-sub-station-in-er-pgcil'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                            Petition for determination of transmission tariff for the
-                                                            2024-29; Jeypore Sub-station in ER, PGCIL</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/cerc-petition-for-determination-of-transmission-tariff-for-2024-29-system-strengthening-scheme-in-uttar-pradesh'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                            Petition for determination of transmission tariff for
-                                                            2024-29; System Strengthening Scheme in Uttar Pradesh</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/cerc-petition-for-determination-of-the-transmission-tariff-for-the-2024-29-station-jalandhar-transmission-line-pgcil'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                            Petition for determination of the transmission tariff for
-                                                            the 2024-29; Station-Jalandhar Transmission Line PGCIL</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/cerc-petition-for-transmission-tariff-for-the-2024-29-for-kaiga-narendra-400-kv-dcc-transmission-line-pgcil'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                            Petition for transmission tariff for the 2024-29 for Kaiga -
-                                                            Narendra 400 kV D/C Transmission Line; PGCIL</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/cerc-petition-for-adoption-of-tariff-for-1200-mw-ists-connected-solar-pv-power-with-600-mwc1200-mwh-eess-seci'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                            Petition for adoption of tariff for 1200 MW ISTS connected
-                                                            Solar PV Power with 600 MW/1200 MWh EESS; SECI</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/scheme-for-implementation-of-pumped-hydro-storage-phs-project-in-madhya-pradesh'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>Scheme
-                                                            for Implementation of Pumped Hydro Storage (PHS) Project in
-                                                            Madhya Pradesh</a>
-                                                    </li>
-                                                    <li
-                                                        style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                        <span
-                                                            style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                        <a href='https://omnicoreplus.com/post/tgerc-commission-invites-comments-suggestions-on-the-filings-made-by-tggenco-for-annual-tariff-petition-for-fy-25-26'
-                                                            target='_blank'
-                                                            style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>TGERC:
-                                                            Commission invites comments & suggestions on the filings
-                                                            made by TGGENCO for Annual Tariff petition for FY 25-26</a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td style="width: 35%; vertical-align: top">
-                                    <table
-                                        style="border-collapse: collapse;margin: 0px;font-family: Arial, Helvetica, sans-serif;">
-                                        <tbody>
-                                            <tr>
-                                                <td
-                                                    style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;font-weight: bold;padding-bottom: 5px;">
-                                                    EV Ecosystem Reports</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div style="width: 100%; margin-top: 10px">
-                                                        <img src="https://eninrac.com/assets/upload/ev-img-omni.png"
-                                                            alt=""
-                                                            style="height:160px;width: 100%;border-radius: 8px;display: block;object-fit:cover; " />
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <table width="100%" cellpadding="0" cellspacing="0"
-                                                        style="font-family: Arial, Helvetica, sans-serif;border-collapse: collapse;margin-bottom: 10px;">
-                                                        <tr>
-                                                            <td
-                                                                style="padding-top: 10px;font-size: 18px;color: #003366;border-bottom: 2px solid #003366;font-weight: bold;padding-bottom: 5px;">
-                                                                Contact</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td
-                                                                style="font-size: 14px;color: #333333;padding-top: 10px;">
-                                                                <div
-                                                                    style="margin-bottom: 20px;background-color: white;border-radius: 8px;">
-                                                                    <p
-                                                                        style="font-size: 14px;color: #333333;text-align: left;">
-                                                                        To book EV Ecosystem Reports services & gain
-                                                                        first mover advantage please contact BD Team.
-                                                                    </p>
-                                                                    <div style="margin-top: 10px">
-                                                                        <div
-                                                                            style="border-radius: 50%;width: 70px;height: 70px;overflow: hidden;">
-                                                                            <img src="https://eninrac.com/assets/upload/nitika-sharma.jpg"
-                                                                                width="70" height="70"
-                                                                                style="border-radius: 50%;object-fit: cover;"
-                                                                                alt="" />
-                                                                        </div>
-                                                                        <p style="font-size: 14px;margin-top: 10px;">
-                                                                            Nitika Sharma
-                                                                            <br />
-                                                                            <span>
-                                                                                <a href="mailto:nsharma@eninrac.com"
-                                                                                    style="color: rgb(64, 114, 210);text-decoration: none;">nsharma@eninrac.com</a>
-                                                                            </span>
-                                                                            <br>
-                                                                            <span>
-                                                                                <a href="tel:9319048963"
-                                                                                    style="color: rgb(64, 114, 210);text-decoration: none;">+91
-                                                                                    9319048963</a>
-                                                                            </span>
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-
-            <!-- Central -->
-            <tr>
-                <td style="padding: 20px 20px 0px 20px">
-                    <table width="100%" cellpadding="0" cellspacing="0"
-                        style="border-collapse: collapse;font-family: Arial, Helvetica, sans-serif;">
-                        <tr>
-                            <td style="width: 65%; vertical-align: top; padding-right: 20px">
-                                <table width="100%" cellpadding="0" cellspacing="0"
-                                    style="border-collapse: collapse; margin-bottom: 20px">
-                                    <tr>
-                                        <td
-                                            style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;padding-bottom: 5px;margin-bottom: 10px;font-weight: bold;">
-                                            Central / State</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <ul style="list-style: none; padding: 0; margin: 10px 0 0 0">
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/derc-seeking-adjudication-of-disputes-between-the-ipgcl-ppcl-vs-brpl-bypl-on-the-unilateral-action-of-the-respondent'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>DERC:
-                                                        Seeking adjudication of disputes between the IPGCL, PPCL vs.
-                                                        BRPL, BYPL on the unilateral action of the Respondent</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/wberc-for-approval-of-installation-of-sodium-bicarbonate-based-dsi-fgd-system-in-respect-of-1x300-mw-unit-7-1x250-mw'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>WBERC:
-                                                        For approval of installation of sodium bicarbonate based DSI FGD
-                                                        system in respect of 1X300 MW UNIT 7 & 1X250 MW</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/cerc-draft-cerc-connectivity-and-general-network-access-to-the-ists-fourth-amendment-regulations-2025'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC:
-                                                        Draft CERC (Connectivity and General Network Access to the ISTS)
-                                                        (Fourth Amendment) Regulations, 2025.</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/wberc-for-determination-of-tariff-under-the-eighth-control-period-for-the-year-2025-26'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>WBERC:
-                                                        For determination of tariff under the eighth control period for
-                                                        the year 2025-26</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/seci-power-available-for-sale-with-seci-ltd'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>SECI:
-                                                        Power available for sale with SECI Ltd</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/cerc-rops-petition-for-extension-of-scod-due-to-force-majeure-events-and-consequential-relief-to-offset-jktl'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC
-                                                        RoPs: Petition for extension of SCOD due to Force Majeure events
-                                                        and consequential relief to offset JKTL</a>
-                                                </li>
-                                                <li style='margin-bottom: 10px;display: flex;align-items: flex-start;'>
-                                                    <span
-                                                        style='line-height: 20px;margin-right: 10px;font-size: 20px;font-weight: bold;'>&#187;</span>
-                                                    <a href='https://omnicoreplus.com/post/cerc-rops-petition-for-relief-to-offset-the-adverse-effect-of-the-force-majeure-and-change-in-law-events-wrss-tl'
-                                                        target='_blank'
-                                                        style=' text-decoration: none;color: #003366;font-size: 14px;text-align: justify;'>CERC
-                                                        RoPs: Petition for relief to offset the adverse effect of the
-                                                        Force Majeure and Change in Law events. WRSS TL
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td style="width: 35%; vertical-align: top">
-                                <table width="100%" cellpadding="0" cellspacing="0"
-                                    style="border-collapse: collapse;font-family: Arial, Helvetica, sans-serif;">
-                                    <tbody>
-                                        <tr>
-                                            <td
-                                                style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;font-weight: bold;padding-bottom: 5px;">
-                                                Research Reports</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div style="margin-top: 10px">
-                                                    <div style="width: 100%">
-                                                        <img src="https://omnicoreplus.com/assets/om-upload/technology-battery-energy-storage-system.jpg"
-                                                            alt=""
-                                                            style="width: 100%;border-radius: 8px;display: block; object-fit:cover;" />
-                                                    </div>
-                                                    <a href="https://store.eninrac.com/reports/examining-the-bess-market-potential-for-the-commercial-and-industrial-consumers-in-india-to-aid-the-go-to-market-gtm-for-bess-manufacturers"
-                                                        target="_blank"
-                                                        style="font-size: 14px;text-align: justify;text-decoration: none;color: #003366;padding: 10px 0px;display: block;">
-                                                        <b>Examining the BESS Market Potential for the Commercial &
-                                                            Industrial Consumers in India to aid the Go-to-Market (GTM)
-                                                            for BESS Manufacturers</b>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div style="margin-top: 10px">
-                                                    <div style="width: 100%">
-                                                        <img src="https://img.freepik.com/free-photo/men-women-help-each-other-collect-garbage_1150-23932.jpg?t=st=1730717973~exp=1730721573~hmac=bad96996088a49084fc86a11fac93d9b61bc33bd4dafc5a34a2dadc26db1a89c&w=826"
-                                                            alt=""
-                                                            style="width: 100%;border-radius: 8px;display: block; object-fit:cover;" />
-                                                    </div>
-                                                    <a href="https://store.eninrac.com/reports/waste-to-energy-and-waste-management-market-and-outlook-in-india-2030"
-                                                        target="_blank"
-                                                        style="font-size: 14px;text-align: justify;text-decoration: none;color: #003366;padding: 10px 0px;display: block;">
-                                                        <b>Waste-to-Energy and Waste Management Market & Outlook in
-                                                            India 2030</b>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- <tr>
-                                            <td style="padding-top: 20px;font-size: 18px;color: #003366;border-bottom: 2px solid #003366;font-weight: bold;padding-bottom: 5px;">Contact</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-size: 14px;color: #333333;padding-top: 10px;">
-                                                <div style="margin-bottom: 20px;background-color: white;border-radius: 8px;">
-                                                    <p style="font-size: 14px;color: #333333;text-align: left;">To book this report or use the place for your brand advertisement contact.</p>
-                                                    <div style="margin-top: 20px">
-                                                        <div style="border-radius: 50%;width: 70px;height: 70px;overflow: hidden;">
-                                                            <img src="https://eninrac.com/assets/upload/nitika-sharma.jpg" width="70" height="70" style="border-radius: 50%;object-fit: cover;" alt="" />
-                                                        </div>
-                                                        <p style="font-size: 14px;margin-left: 10px;margin-top: 10px;">
-                                                            Nitika Sharma
-                                                            <br />
-                                                            <span>
-                                                                <a href="mailto:nsharma@eninrac.com" style="color: rgb(64, 114, 210);text-decoration: none;">nsharma@eninrac.com</a>
-                                                            </span>
-                                                            <br>
-                                                            <a href="tel:+919319048963" style="color: rgb(64, 114, 210);text-decoration: none;">+91 9319048963</a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr> -->
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- Infographics -->
-            <tr>
-                <td style="padding: 20px; width: 100%; vertical-align: top">
-                    <table width="100%" cellpadding="0" cellspacing="0"
-                        style="border-collapse: collapse;font-family: Arial, Helvetica, sans-serif;">
-                        <tr>
-                            <td
-                                style="font-size: 18px;color: #003366;border-bottom: 2px solid #003366;padding-bottom: 5px;margin-bottom: 10px;font-weight: bold;">
-                                Infographics</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <table
-                                    style="margin: 20px auto 0;width: 100%;border-spacing: 0;font-family: Arial, Helvetica, sans-serif;">
-                                    <tr>
-                                        <td>
-                                            <div>
-                                                <a href='https://omnicoreplus.com/infographic/guvnls-tender-auction-results-for-250-mw'
-                                                    target='_blank'>
-                                                    <img src='https://omnicoreplus.com/assets/om-upload/thumbnail/guvnl-250mw-solar.jpg'
-                                                        style='object-fit: cover; border-radius: 8px' width='100%'
-                                                        height='auto' alt='guvnl-250mw-solar' />
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <!-- Footer -->
-            <tr>
-                <td style="margin: 0 0 0 0; padding: 0 0 0 0; width: 100%">
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0"
-                        style="padding: 0 0 0 0;width: 100%;background: linear-gradient(135deg,hsla(210, 100%, 20%, 1) 0%,hsla(233, 79%, 51%, 1) 100%);color: #ffffff;line-height: 1.2;">
-                        <tbody>
-                            <tr>
-                                <td style="margin: 0 0 0 0;padding: 20px 20px 0 20px;width: 100%;">
-                                    <a href="https://einfews.energyinfra.market/">
-                                        <img src="https://eninrac.com/assets/upload/omni-white.png"
-                                            alt="einfews-footer-logo" width="120px" />
-                                    </a>
-                                    <p style="margin: 10px 0 20px 0;padding: 0 0 0 0;font-size: 11px;width: 90%;">
-                                        All rights reserved. Republication or redistribution of
-                                        Eninrac Consulting content, including by framing or similar
-                                        means, is prohibited without the prior written consent of
-                                        Eninrac Consulting. This email contains information about
-                                        Eninrac&#39;s research, insights, services, or events. By
-                                        opening our emails or clicking on links, you agree to our
-                                        use of cookies and web tracking technology. For more
-                                        information on how we use and protect your information,
-                                        please review our privacy policy (use hyperlink).
+                              </tr>
+                              <tr>
+                                <td
+                                  style="
+                                    font-size: 14px;
+                                    color: #333333;
+                                    padding-top: 10px;
+                                  "
+                                >
+                                  <div
+                                    style="
+                                      margin-bottom: 20px;
+                                      background-color: white;
+                                      border-radius: 8px;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        color: #333333;
+                                        text-align: left;
+                                      "
+                                    >
+                                      To book Open Access suite services & gain
+                                      first mover advantage please contact BD
+                                      Team
                                     </p>
-                                    <p style="margin: 10px 0 20px 0;padding: 0 0 0 0;font-size: 11px;width: 90%;">
-                                        You received this email because you are a registered member of
-                                        <a href="https://eninrac.com" target="_blank"
-                                            style="color: #fff">eninrac.com</a>.
-                                    </p>
-                                    <p style="margin: 10px 0 20px 0;padding: 0 0 0 0;font-size: 11px;width: 90%;">
-                                        Copyright © 2024 | Eninrac Consulting Private Limited, 2nd
-                                        Floor, B-130, B-Block, Sector 65, Noida, Uttar Pradesh,
-                                        India
-                                    </p>
-                                    <p style="margin: 10px 0 20px 0;padding: 0 0 0 0;font-size: 11px;width: 90%;">
+                                    <div style="margin-top: 20px">
+                                      <div
+                                        style="
+                                          border-radius: 50%;
+                                          width: 70px;
+                                          height: 70px;
+                                          overflow: hidden;
+                                        "
+                                      >
+                                        <img
+                                          src="https://eninrac.com/assets/upload/nitika-sharma.jpg"
+                                          width="70"
+                                          height="70"
+                                          style="
+                                            border-radius: 50%;
+                                            object-fit: cover;
+                                          "
+                                          alt=""
+                                        />
+                                      </div>
+                                      <p
+                                        style="
+                                          font-size: 14px;
+                                          margin-top: 10px;
+                                        "
+                                      >
+                                        Nitika Sharma
+                                        <br />
                                         <span>
-                                            <a href="https://omnicoreplus.com/marketing-preferences?q=[private-key]"
-                                                style="color: #ffffff" target="_blank">Manage subscriptions</a>
+                                          <a
+                                            href="mailto:nsharma@eninrac.com"
+                                            style="
+                                              color: rgb(64, 114, 210);
+                                              text-decoration: none;
+                                            "
+                                            >nsharma@eninrac.com</a
+                                          >
                                         </span>
-                                        |
+                                        <br />
                                         <span>
-                                            <a href="https://omnicoreplus.com/unsubscribe-confirmation?q=[private-key]"
-                                                style="color: #ffffff" target="_blank">Unsubscribe</a>
+                                          <a
+                                            href="tel:9319048963"
+                                            style="
+                                              color: rgb(64, 114, 210);
+                                              text-decoration: none;
+                                            "
+                                            >+91 9319048963</a
+                                          >
                                         </span>
-                                    </p>
+                                      </p>
+                                    </div>
+                                  </div>
                                 </td>
-                            </tr>
-                        </tbody>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <!-- New Energies / Generation  -->
+        <tr>
+          <td style="padding: 20px 20px 0px 20px">
+            <table
+              width="100%"
+              cellpadding="0"
+              cellspacing="0"
+              style="
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td
+                    style="width: 65%; vertical-align: top; padding-right: 20px"
+                  >
+                    <table
+                      width="100%"
+                      cellpadding="0"
+                      cellspacing="0"
+                      style="border-collapse: collapse; margin-bottom: 20px"
+                    >
+                      <tr>
+                        <td
+                          style="
+                            font-size: 18px;
+                            color: #003366;
+                            border-bottom: 2px solid #003366;
+                            padding-bottom: 5px;
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                          "
+                        >
+                          New Energies / Generation / T&D
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul
+                            style="
+                              list-style: none;
+                              padding: 0;
+                              margin: 10px 0 0 0;
+                            "
+                          >
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/cerc-petition-for-determination-of-transmission-tariff-for-the-2024-29-jeypore-sub-station-in-er-pgcil"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >CERC: Petition for determination of
+                                transmission tariff for the 2024-29; Jeypore
+                                Sub-station in ER, PGCIL</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/cerc-petition-for-determination-of-transmission-tariff-for-2024-29-system-strengthening-scheme-in-uttar-pradesh"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >CERC: Petition for determination of
+                                transmission tariff for 2024-29; System
+                                Strengthening Scheme in Uttar Pradesh</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/cerc-petition-for-determination-of-the-transmission-tariff-for-the-2024-29-station-jalandhar-transmission-line-pgcil"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >CERC: Petition for determination of the
+                                transmission tariff for the 2024-29;
+                                Station-Jalandhar Transmission Line PGCIL</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/cerc-petition-for-transmission-tariff-for-the-2024-29-for-kaiga-narendra-400-kv-dcc-transmission-line-pgcil"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >CERC: Petition for transmission tariff for the
+                                2024-29 for Kaiga - Narendra 400 kV D/C
+                                Transmission Line; PGCIL</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/cerc-petition-for-adoption-of-tariff-for-1200-mw-ists-connected-solar-pv-power-with-600-mwc1200-mwh-eess-seci"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >CERC: Petition for adoption of tariff for 1200
+                                MW ISTS connected Solar PV Power with 600
+                                MW/1200 MWh EESS; SECI</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/scheme-for-implementation-of-pumped-hydro-storage-phs-project-in-madhya-pradesh"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >Scheme for Implementation of Pumped Hydro
+                                Storage (PHS) Project in Madhya Pradesh</a
+                              >
+                            </li>
+                            <li
+                              style="
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                              "
+                            >
+                              <span
+                                style="
+                                  line-height: 20px;
+                                  margin-right: 10px;
+                                  font-size: 20px;
+                                  font-weight: bold;
+                                "
+                                >&#187;</span
+                              >
+                              <a
+                                href="https://omnicoreplus.com/post/tgerc-commission-invites-comments-suggestions-on-the-filings-made-by-tggenco-for-annual-tariff-petition-for-fy-25-26"
+                                target="_blank"
+                                style="
+                                  text-decoration: none;
+                                  color: #003366;
+                                  font-size: 14px;
+                                  text-align: justify;
+                                "
+                                >TGERC: Commission invites comments &
+                                suggestions on the filings made by TGGENCO for
+                                Annual Tariff petition for FY 25-26</a
+                              >
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td style="width: 35%; vertical-align: top">
+                    <table
+                      style="
+                        border-collapse: collapse;
+                        margin: 0px;
+                        font-family: Arial, Helvetica, sans-serif;
+                      "
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            style="
+                              font-size: 18px;
+                              color: #003366;
+                              border-bottom: 2px solid #003366;
+                              font-weight: bold;
+                              padding-bottom: 5px;
+                            "
+                          >
+                            EV Ecosystem Reports
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div style="width: 100%; margin-top: 10px">
+                              <img
+                                src="https://eninrac.com/assets/upload/ev-img-omni.png"
+                                alt=""
+                                style="
+                                  height: 160px;
+                                  width: 100%;
+                                  border-radius: 8px;
+                                  display: block;
+                                  object-fit: cover;
+                                "
+                              />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              style="
+                                font-family: Arial, Helvetica, sans-serif;
+                                border-collapse: collapse;
+                                margin-bottom: 10px;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  style="
+                                    padding-top: 10px;
+                                    font-size: 18px;
+                                    color: #003366;
+                                    border-bottom: 2px solid #003366;
+                                    font-weight: bold;
+                                    padding-bottom: 5px;
+                                  "
+                                >
+                                  Contact
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="
+                                    font-size: 14px;
+                                    color: #333333;
+                                    padding-top: 10px;
+                                  "
+                                >
+                                  <div
+                                    style="
+                                      margin-bottom: 20px;
+                                      background-color: white;
+                                      border-radius: 8px;
+                                    "
+                                  >
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        color: #333333;
+                                        text-align: left;
+                                      "
+                                    >
+                                      To book EV Ecosystem Reports services &
+                                      gain first mover advantage please contact
+                                      BD Team.
+                                    </p>
+                                    <div style="margin-top: 10px">
+                                      <div
+                                        style="
+                                          border-radius: 50%;
+                                          width: 70px;
+                                          height: 70px;
+                                          overflow: hidden;
+                                        "
+                                      >
+                                        <img
+                                          src="https://eninrac.com/assets/upload/nitika-sharma.jpg"
+                                          width="70"
+                                          height="70"
+                                          style="
+                                            border-radius: 50%;
+                                            object-fit: cover;
+                                          "
+                                          alt=""
+                                        />
+                                      </div>
+                                      <p
+                                        style="
+                                          font-size: 14px;
+                                          margin-top: 10px;
+                                        "
+                                      >
+                                        Nitika Sharma
+                                        <br />
+                                        <span>
+                                          <a
+                                            href="mailto:nsharma@eninrac.com"
+                                            style="
+                                              color: rgb(64, 114, 210);
+                                              text-decoration: none;
+                                            "
+                                            >nsharma@eninrac.com</a
+                                          >
+                                        </span>
+                                        <br />
+                                        <span>
+                                          <a
+                                            href="tel:9319048963"
+                                            style="
+                                              color: rgb(64, 114, 210);
+                                              text-decoration: none;
+                                            "
+                                            >+91 9319048963</a
+                                          >
+                                        </span>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <!-- Central -->
+        <tr>
+          <td style="padding: 20px 20px 0px 20px">
+            <table
+              width="100%"
+              cellpadding="0"
+              cellspacing="0"
+              style="
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              <tr>
+                <td
+                  style="width: 65%; vertical-align: top; padding-right: 20px"
+                >
+                  <table
+                    width="100%"
+                    cellpadding="0"
+                    cellspacing="0"
+                    style="border-collapse: collapse; margin-bottom: 20px"
+                  >
+                    <tr>
+                      <td
+                        style="
+                          font-size: 18px;
+                          color: #003366;
+                          border-bottom: 2px solid #003366;
+                          padding-bottom: 5px;
+                          margin-bottom: 10px;
+                          font-weight: bold;
+                        "
+                      >
+                        Central / State
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul
+                          style="
+                            list-style: none;
+                            padding: 0;
+                            margin: 10px 0 0 0;
+                          "
+                        >
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/derc-seeking-adjudication-of-disputes-between-the-ipgcl-ppcl-vs-brpl-bypl-on-the-unilateral-action-of-the-respondent"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >DERC: Seeking adjudication of disputes between
+                              the IPGCL, PPCL vs. BRPL, BYPL on the unilateral
+                              action of the Respondent</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/wberc-for-approval-of-installation-of-sodium-bicarbonate-based-dsi-fgd-system-in-respect-of-1x300-mw-unit-7-1x250-mw"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >WBERC: For approval of installation of sodium
+                              bicarbonate based DSI FGD system in respect of
+                              1X300 MW UNIT 7 & 1X250 MW</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/cerc-draft-cerc-connectivity-and-general-network-access-to-the-ists-fourth-amendment-regulations-2025"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >CERC: Draft CERC (Connectivity and General
+                              Network Access to the ISTS) (Fourth Amendment)
+                              Regulations, 2025.</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/wberc-for-determination-of-tariff-under-the-eighth-control-period-for-the-year-2025-26"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >WBERC: For determination of tariff under the
+                              eighth control period for the year 2025-26</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/seci-power-available-for-sale-with-seci-ltd"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >SECI: Power available for sale with SECI Ltd</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/cerc-rops-petition-for-extension-of-scod-due-to-force-majeure-events-and-consequential-relief-to-offset-jktl"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >CERC RoPs: Petition for extension of SCOD due to
+                              Force Majeure events and consequential relief to
+                              offset JKTL</a
+                            >
+                          </li>
+                          <li
+                            style="
+                              margin-bottom: 10px;
+                              display: flex;
+                              align-items: flex-start;
+                            "
+                          >
+                            <span
+                              style="
+                                line-height: 20px;
+                                margin-right: 10px;
+                                font-size: 20px;
+                                font-weight: bold;
+                              "
+                              >&#187;</span
+                            >
+                            <a
+                              href="https://omnicoreplus.com/post/cerc-rops-petition-for-relief-to-offset-the-adverse-effect-of-the-force-majeure-and-change-in-law-events-wrss-tl"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #003366;
+                                font-size: 14px;
+                                text-align: justify;
+                              "
+                              >CERC RoPs: Petition for relief to offset the
+                              adverse effect of the Force Majeure and Change in
+                              Law events. WRSS TL
+                            </a>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
-            </tr>
-        </table>
+                <td style="width: 35%; vertical-align: top">
+                  <table
+                    width="100%"
+                    cellpadding="0"
+                    cellspacing="0"
+                    style="
+                      border-collapse: collapse;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                  >
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            font-size: 18px;
+                            color: #003366;
+                            border-bottom: 2px solid #003366;
+                            font-weight: bold;
+                            padding-bottom: 5px;
+                          "
+                        >
+                          Research Reports
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div style="margin-top: 10px">
+                            <div style="width: 100%">
+                              <img
+                                src="https://omnicoreplus.com/assets/om-upload/technology-battery-energy-storage-system.jpg"
+                                alt=""
+                                style="
+                                  width: 100%;
+                                  border-radius: 8px;
+                                  display: block;
+                                  object-fit: cover;
+                                "
+                              />
+                            </div>
+                            <a
+                              href="https://store.eninrac.com/reports/examining-the-bess-market-potential-for-the-commercial-and-industrial-consumers-in-india-to-aid-the-go-to-market-gtm-for-bess-manufacturers"
+                              target="_blank"
+                              style="
+                                font-size: 14px;
+                                text-align: justify;
+                                text-decoration: none;
+                                color: #003366;
+                                padding: 10px 0px;
+                                display: block;
+                              "
+                            >
+                              <b
+                                >Examining the BESS Market Potential for the
+                                Commercial & Industrial Consumers in India to
+                                aid the Go-to-Market (GTM) for BESS
+                                Manufacturers</b
+                              >
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div style="margin-top: 10px">
+                            <div style="width: 100%">
+                              <img
+                                src="https://omnicoreplus.com/assets/om-upload/men-women-help-each-other-collect-garbage-1150-23932-1-.jpg"
+                                alt=""
+                                style="
+                                  width: 100%;
+                                  border-radius: 8px;
+                                  display: block;
+                                  object-fit: cover;
+                                "
+                              />
+                            </div>
+                            <a
+                              href="https://store.eninrac.com/reports/waste-to-energy-and-waste-management-market-and-outlook-in-india-2030"
+                              target="_blank"
+                              style="
+                                font-size: 14px;
+                                text-align: justify;
+                                text-decoration: none;
+                                color: #003366;
+                                padding: 10px 0px;
+                                display: block;
+                              "
+                            >
+                              <b
+                                >Waste-to-Energy and Waste Management Market &
+                                Outlook in India 2030</b
+                              >
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Infographics -->
+        <tr>
+          <td style="padding: 20px; width: 100%; vertical-align: top">
+            <table
+              width="100%"
+              cellpadding="0"
+              cellspacing="0"
+              style="
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              <tr>
+                <td
+                  style="
+                    font-size: 18px;
+                    color: #003366;
+                    border-bottom: 2px solid #003366;
+                    padding-bottom: 5px;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                  "
+                >
+                  Infographics
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table
+                    style="
+                      margin: 20px auto 0;
+                      width: 100%;
+                      border-spacing: 0;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                  >
+                    <tr>
+                      <td>
+                        <div>
+                          <a
+                            href="https://omnicoreplus.com/infographic/guvnls-tender-auction-results-for-250-mw"
+                            target="_blank"
+                          >
+                            <img
+                              src="https://omnicoreplus.com/assets/om-upload/thumbnail/guvnl-250mw-solar.jpg"
+                              style="object-fit: cover; border-radius: 8px"
+                              width="100%"
+                              height="auto"
+                              alt="guvnl-250mw-solar"
+                            />
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+          <td style="margin: 0 0 0 0; padding: 0 0 0 0; width: 100%">
+            <table
+              role="presentation"
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              style="
+                padding: 0 0 0 0;
+                width: 100%;
+                background: linear-gradient(
+                  135deg,
+                  hsla(210, 100%, 20%, 1) 0%,
+                  hsla(233, 79%, 51%, 1) 100%
+                );
+                color: #ffffff;
+                line-height: 1.2;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td
+                    style="
+                      margin: 0 0 0 0;
+                      padding: 20px 20px 0 20px;
+                      width: 100%;
+                    "
+                  >
+                    <a href="https://einfews.energyinfra.market/">
+                      <img
+                        src="https://eninrac.com/assets/upload/omni-white.png"
+                        alt="einfews-footer-logo"
+                        width="120px"
+                      />
+                    </a>
+                    <p
+                      style="
+                        margin: 10px 0 20px 0;
+                        padding: 0 0 0 0;
+                        font-size: 11px;
+                        width: 90%;
+                      "
+                    >
+                      All rights reserved. Republication or redistribution of
+                      Eninrac Consulting content, including by framing or
+                      similar means, is prohibited without the prior written
+                      consent of Eninrac Consulting. This email contains
+                      information about Eninrac&#39;s research, insights,
+                      services, or events. By opening our emails or clicking on
+                      links, you agree to our use of cookies and web tracking
+                      technology. For more information on how we use and protect
+                      your information, please review our privacy policy (use
+                      hyperlink).
+                    </p>
+                    <p
+                      style="
+                        margin: 10px 0 20px 0;
+                        padding: 0 0 0 0;
+                        font-size: 11px;
+                        width: 90%;
+                      "
+                    >
+                      You received this email because you are a registered
+                      member of
+                      <a
+                        href="https://eninrac.com"
+                        target="_blank"
+                        style="color: #fff"
+                        >eninrac.com</a
+                      >.
+                    </p>
+                    <p
+                      style="
+                        margin: 10px 0 20px 0;
+                        padding: 0 0 0 0;
+                        font-size: 11px;
+                        width: 90%;
+                      "
+                    >
+                      Copyright © 2024 | Eninrac Consulting private Limited, 2nd
+                      Floor, B-130, B-Block, Sector 65, Noida, Uttar Pradesh,
+                      India
+                    </p>
+                    <p
+                      style="
+                        margin: 10px 0 20px 0;
+                        padding: 0 0 0 0;
+                        font-size: 11px;
+                        width: 90%;
+                      "
+                    >
+                      <span>
+                        <a
+                          href="https://omnicoreplus.com/marketing-preferences?q=[private-key]"
+                          style="color: #ffffff"
+                          target="_blank"
+                          >Manage subscriptions</a
+                        >
+                      </span>
+                      |
+                      <span>
+                        <a
+                          href="https://omnicoreplus.com/unsubscribe-confirmation?q=[private-key]"
+                          style="color: #ffffff"
+                          target="_blank"
+                          >Unsubscribe</a
+                        >
+                      </span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
     </div>
-</body>
 
+    <script>
+      let number = [
+        10, 5, 4, 6, 8, 16, 24, 15, 20, 30, 40, 50, 60, 70, 80, 90, 100,
+      ];
+      for (let i = 0; i < number.length; i++) {
+        setTimeout(() => {
+          console.log(number[i]);
+        }, i * 5000);
+      }
+    </script>
+  </body>
 </html>
