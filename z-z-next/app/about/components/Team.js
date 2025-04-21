@@ -7,12 +7,12 @@ export default function Team() {
             <h2>Our Team</h2>
             <p>Meet the amazing folks behind our company.</p>
             <Image
-                src="/banner.jpg"
-                alt="Banner"
-                fill               // 👈 Fills the parent container
-                style={{ objectFit: "cover" }}  // Keeps it looking nice
-                sizes="(max-width: 768px)"
-            />
-        </section>
+                src="/banner.jpg" 
+                alt="Banner" 
+                fill               
+                style={{ objectFit: "cover" }} 
+                sizes="(max-width: 768px)" 
+            /> 
+        </section> 
     );
 }

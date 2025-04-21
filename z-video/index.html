@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video.js with Quality Selector</title>
+    <link href="https://vjs.zencdn.net/8.9.0/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="">
+    <link
+      href="https://unpkg.com/video.js@8.9.0/dist/themes/city/index.css"
+      rel="stylesheet"
+    />
+<link rel="stylesheet" href="http://vjs.zencdn.net/8.9.0/video-js.css">
+
+    <style>
+      body {
+        background: #121212;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+      }
+      video {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>options are saved in the content where it left</h2>
+    <video
+      id="my-video"
+      class="video-js vjs-theme-city"
+      controls
+      preload="auto"
+      width="720"
+      height="400"
+      data-setup="{}"
+    >
+      <!-- Replace with your HLS stream -->
+      <source
+        src="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
+        type="application/x-mpegURL"
+      />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that supports HTML5 video
+      </p>
+    </video>
+    <!-- Video.js -->
+    <script src="https://vjs.zencdn.net/8.9.0/video.min.js"></script>
+
+    <!-- Quality Selector Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/videojs-http-source-selector@1.1.6/dist/videojs-http-source-selector.min.js"></script>
+
+    <script>
+      const player = videojs("my-video");
+
+      // Initialize plugin
+      player.httpSourceSelector();
+
+      // Optional: set default to "auto"
+      player.ready(function () {
+        player.httpSourceSelector({
+          default: "auto",
+        });
+      });
+
+      // Event listeners (optional)
+      player.on("resolutionchange", function () {
+        console.log("Quality changed to:", player.src());
+      });
+    </script>
+  </body>
+</html>
