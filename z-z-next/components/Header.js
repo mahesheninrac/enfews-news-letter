@@ -8,6 +8,7 @@ export default function Header() {
             <BackButton url={"blog"} title={"Blog Page"} />
             <BackButton url={"contact"} title={"Contact Page"} />
             <BackButton url={"about"} title={"About Page"} />
+            <BackButton url={"work"} title={"Work Page"} />
         </header>
     );
 }
