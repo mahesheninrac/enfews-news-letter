@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 
 const ProductSearch = () => {
@@ -9,10 +9,8 @@ const ProductSearch = () => {
 
     const handleSearch = async () => {
         if (!query) return;
-
         setLoading(true);
         setError('');
-
         try {
             const response = await axios.get(`http://localhost:5000/search?query=${query}`);
             setResults(response.data);
