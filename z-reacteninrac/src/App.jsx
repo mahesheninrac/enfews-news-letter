@@ -3,6 +3,7 @@ import withLoading from './hoc/withLoading'
 import DataDisplay from './components/datafetch'
 import AddTask from './components/AddTask';
 import TaskList from './components/TaskList';
+import Signup from './components/SignUp';
 
 const EnhancedDataDisplay = withLoading(DataDisplay);
 function App() {
@@ -28,28 +29,31 @@ function App() {
   }, []);
 
   return (
-    <div className='container' >
-      <div>
-        <div className="">
-          <img src="" alt="" />
-         
-        </div>
-        <ul>
-            <li className=''><a href="#"> Home</a></li>
-            <li className=''><a href="#">  about</a></li>
-            <li className=''><a href="#"> Contact</a></li>
-            <li className=''><a href="#"> Services</a></li>
-          </ul>
-      </div>
-      <AddTask addTaskHandler={addTaskHandler} tasks={tasks} />
-      <TaskList tasks={tasks} isLoading={isLoading} deleteTask={deleteTask} />
-      <h4>Eninrac Consulting we are marketing research </h4>
-      <EnhancedDataDisplay data={data} isLoading={isLoading} />
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, incidunt.
-        </p>
-      </div>
+    // <div className='container' >
+    //   <div>
+    //     <div className="">
+    //       <img src="" alt="" />
+
+    //     </div>
+    //     <ul>
+    //         <li className=''><a href="#"> Home</a></li>
+    //         <li className=''><a href="#">  about</a></li>
+    //         <li className=''><a href="#"> Contact</a></li>
+    //         <li className=''><a href="#"> Services</a></li>
+    //       </ul>
+    //   </div>
+    //   <AddTask addTaskHandler={addTaskHandler} tasks={tasks} />
+    //   <TaskList tasks={tasks} isLoading={isLoading} deleteTask={deleteTask} />
+    //   <h4>Eninrac Consulting we are marketing research </h4>
+    //   <EnhancedDataDisplay data={data} isLoading={isLoading} />
+    //   <div>
+    //     <p>
+    //       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, incidunt.
+    //     </p>
+    //   </div>
+    // </div>
+    <div className="container">
+      <Signup />
     </div>
   )
 }
